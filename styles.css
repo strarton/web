@@ -254,6 +254,18 @@ footer p {
     #movil{
         display:block;
     }
+    #productos-wrapper {
+    display: flex;
+    justify-content: center; 
+    flex-wrap: wrap; 
+    padding: 20px;
+    margin: 10px;
+}
+
+.per-hos-otr {
+    flex: 1;  
+    max-width: 100%; 
+}
     #about img {
         width: 100%;
         height: auto; 
