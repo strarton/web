@@ -9,16 +9,31 @@
     justify-content: space-around; 
     flex-wrap: wrap; 
     padding: 20px;
-    margin: 0 auto;
+    margin-inline: 145px;
 }
 
-
+.per-hos-otr img {
+    width: 100%;
+}
 
 .per-hos-otr {
+    
     flex: 1; 
     min-width: 270px; 
     max-width: 30%; 
     margin: 10px;
+}
+
+#quehacemos{
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;
+}
+
+#laptop{
+    width: 75%;
+    max-width: 1000px;
 }
 
 .producto {
@@ -193,6 +208,13 @@ footer p {
     font-style: oblique;
     font-weight: bold;
 }
+
+@media (max-width: 1200px) {
+    #quehacemos{
+        max-width: 700px;
+    }
+}
+
 @media (max-width: 850px) {
     #portatil{
         display:none;
@@ -212,7 +234,7 @@ footer p {
     #superpuesto {
         position:absolute;
         padding: 5%;
-        padding-top: 5%;
+        padding-top: 20%;
         color:#F5F5F5;
         
         margin-top: 0;
