@@ -17,7 +17,7 @@
 }
 
 .per-hos-otr {
-    
+    min-width: 250px;
     flex: 1;  
     max-width: 30%; 
     margin: 10px;
@@ -37,7 +37,7 @@
 
 .producto {
     padding: 15px;
-    min-width: 250px;
+    
     margin: 10px 0;
     background-color:#ffffff ;
     color: #2E2E2E;
