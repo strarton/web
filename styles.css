@@ -18,7 +18,7 @@
 
 .per-hos-otr {
     min-width: 250px;
-    flex: 1;  
+    flex: 0;  
     max-width: 30%; 
     margin: 10px;
 }
