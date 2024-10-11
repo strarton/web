@@ -150,10 +150,10 @@ footer p {
     #superpuesto {
         position:absolute;
         padding: 5%;
-        padding-top: 19%;
+        padding-top: 5%;
         color:#F5F5F5;
         
-        margin-top: 5%;
+        margin-top: 0;
         width: 60%;
         height: 50%;
         font-size: small;
