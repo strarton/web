@@ -16,16 +16,22 @@
 
 #pi-1 {
     flex: 0.5;
-    margin-left: 10%; 
+    margin-left: 0%; 
     
 }
 
 #pi-1 p {
-    color: white;
+    color: black;
     line-height: 1.5;
-    background-color:black;
+    border:2px solid rgba(52, 152, 219, 1);
     padding: 2%;
+    margin-top: 2%;
     border-radius: 0.2cm;
+}
+#pi-1 img{
+    margin-top: 2%;
+    /*border: 3px solid orange;*/
+    width: 100%;
 }
 section iframe{
     width: 100%;
