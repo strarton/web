@@ -1,0 +1,265 @@
+/* Estilos generales */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #ffffff;
+    color: #000000;
+}
+
+#gris {
+    filter: grayscale(100%);
+}
+
+#header {
+    height: 75px;
+    background-color: rgba(52, 152, 219, 1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    color: #fff;
+    flex-wrap: wrap;
+}
+
+#logo img {
+    width: 65px;
+}
+
+#header p {
+    margin: 0;
+    font-size: 18px;
+}
+
+#actuales, #last, #max {
+    display: flex;
+    align-items: center;
+    margin: 0 10px;
+}
+
+#header > div {
+    display: flex;
+    align-items: center;
+}
+
+button {
+    background-color: #F39C12;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: rgba(52, 152, 219, 1);
+}
+
+#content {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+#juego {
+    position: relative;
+    flex-basis: 60%;
+    max-width: 600px;
+    margin-right: 20px;
+}
+
+#tabla {
+    position: relative;
+    width: 100%;
+    padding-bottom: 100%; /* Para mantener la proporción 1:1 */
+}
+
+table {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+table, td, tr {
+    border: 1px solid rgba(52, 152, 219, 1);
+    border-collapse: collapse;
+}
+
+td {
+    color: rgba(52, 152, 219, 0);
+    background-color: rgba(52, 152, 219, 0.5);
+}
+
+.serp {
+    background-color: #F39C12;
+    color: #F39C12;
+}
+
+.punto {
+    background-color: #FF0000;
+    color: #FF0000;
+}
+
+/* Ajuste de las imágenes de Pause y Game Over */
+#stop, #gameover {
+    display: none;
+    position: absolute;
+    width: 30%;
+    top: 35%;
+    left: 35%;
+    z-index: 10; /* Asegúrate de que el z-index sea alto para que aparezca encima */
+}
+
+#stop img, #gameover img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* Configuración de botones de juego */
+#config {
+    flex-basis: 30%;
+    background-color: rgba(52, 152, 219, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#pause, #play {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    background-color: #F39C12;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+#pause:active, #play:active {
+    background-color: rgba(52, 152, 219, 1);
+}
+
+#separador {
+    height: 2px;
+    width: 100%;
+    margin: 20px 0;
+    border-bottom: 2px dashed #000000;
+}
+
+#flechitas {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 10px;
+    width: 100%;
+    max-width: 200px;
+}
+
+#up, #down, #left, #right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(52, 152, 219, 1);
+    color: #fff;
+    font-size: 24px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#up:hover, #down:hover, #left:hover, #right:hover {
+    background-color: #F39C12;
+}
+
+#up {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+#left {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+#right {
+    grid-column: 3;
+    grid-row: 2;
+}
+
+#down {
+    grid-column: 2;
+    grid-row: 3;
+}
+
+/* Estilos del historial */
+#historial {
+    width: 20%;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    max-height: 500px;
+    overflow-y: auto;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+    #content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #juego, #config, #historial {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    #juego {
+        max-width: 100%;
+    }
+
+    #flechitas {
+        width: 100%;
+    }
+
+    #tabla {
+        padding-bottom: 100%; /* Mantiene la proporción 1:1 en pantallas pequeñas */
+    }
+
+    #header p {
+        font-size: 14px; /* Reduce el tamaño de la fuente en móviles */
+    }
+
+    #header {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+    }
+
+    button {
+        padding: 8px 15px; /* Ajustar el tamaño de los botones */
+    }
+
+    #stop, #gameover {
+        width: 40%; /* Reduce el tamaño de las imágenes en pantallas pequeñas */
+        top: 30%;
+        left: 30%;
+    }
+
+    #header div {
+        width: 100%;
+        justify-content: center; /* Distribuir mejor los puntos y el botón */
+    }
+
+    #header button {
+        margin-top: 10px;
+    }
+}

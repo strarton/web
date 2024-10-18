@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body onload="iniciarMovimiento()">
+        <div id="header">
+            
+            <div id="logo"><img src="apothecary-159036_640.webp"></div>
+            <div id="actuales"><p>ACTUALES: </p></div>
+            <div id="last"><p>LAST: </p></div>
+            <div id="max"><p>MAX.:</p></div>
+            <button onclick="modo()">Oscuro / Claro</button>
+
+        </div>
+        <div id="content">
+            <div id="juego">
+                <div ><img id="stop" onclick="pause()"src="button-309039_1280.webp"></div>
+                <div><img id="gameover" src="giphy.gif"> </div>
+                <div id="tabla"></div>
+            </div>
+            <div id="config">
+                
+                    <button onclick="pause()" id="pause">PAUSE</button>
+                    <button onclick="play()" id="play">PLAY</button>
+                
+                <div id="separador"></div>
+                <div id="flechitas">
+                    <button onclick="up()" id="up">🢁</button>
+                    <button onclick="left()" id="left">🢀</button>
+                    <button onclick="down()" id="down">🢃</button>
+                    <button onclick="right()" id="right">🢂</button>
+                </div>
+            </div>
+            <div id="historial">
+                
+            </div>
+
+        </div> 
+        <script src="script.js"></script>
+    </body>
+</html>
