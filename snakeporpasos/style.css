@@ -211,7 +211,7 @@ td {
 }
 
 /* Responsive */
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 1000px) {
     #content {
         flex-direction: column;
         align-items: center;
