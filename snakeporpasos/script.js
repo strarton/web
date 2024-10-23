@@ -1,3 +1,16 @@
+function acceptCookies() {
+    // Establecer una cookie para registrar la aceptación
+    document.cookie = "cookies_accepted=true; max-age=" + 60 * 60 * 24 * 100 + "; path=/";
+    document.getElementById('cookie-banner').style.display = 'none';
+}
+
+function checkCookieConsent() {
+    if (!document.cookie.split('; ').find(row => row.startsWith('cookies_accepted'))) {
+        document.getElementById('cookie-banner').style.display = 'block'; // Mostrar el banner
+    }
+}
+
+
 let serp = [[5, 5], [5, 6], [5, 7]]
 let tiempoSegundos = 0
 let juega = false

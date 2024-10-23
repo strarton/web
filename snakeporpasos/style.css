@@ -6,6 +6,41 @@ body {
     color: #000000;
 }
 
+#cookie-banner {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    z-index: 9999;
+    display: none;
+}
+
+#cookie-banner button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 10px 5px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#cookie-banner p {
+    margin: 0;
+}
+
+#cookie-banner a {
+    color: #4CAF50;
+    text-decoration: underline;
+}
+
 #gris {
     filter: grayscale(100%);
 }
