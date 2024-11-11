@@ -1,0 +1,1 @@
+UNA PEQUEÑA ACLARACION: Verás que hay una usario llamdo "Tots" que en el filtro también está. Bien pues esto no significa que te vaya a mostrar todos los usuarios. Para ello esta el campo vacio "". Esta hecho así con la idea de, en un sistema de usuarios controlados poder hacer tareas que sean generales o para todos los usuarios. Si tienes alguna duda no dudes en preguntarme.

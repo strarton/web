@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Llista de tasques</title>
+    <link rel="stylesheet" href="estilada.css">
+</head>
+<body>
+  
+    <header>
+        <h1>Llista de tasques</h1>
+        <div class="linea"></div>
+    </header>
+    <nav id="menu">
+        <!-- Filtro/creacion de tareas -->
+        <div id="crear">
+
+            <label for="usuario">Selecciona Usuario:</label>
+            <select name="nom" id="usuario">
+                <option>Edu</option>
+                <option>Izan</option>
+                <option>Lucas</option>
+                <option>Teo</option>
+                <option>Ivan</option>
+                <option>Ximo</option>
+                <option>Tots</option>
+            </select>
+
+            <label for="prioridad">Selecciona Prioridad:</label>
+            <select name="pri" id="prioridad">
+                <option>Muy Alta</option>
+                <option>Alta</option>
+                <option>Media</option>
+                <option>Baja</option>
+            </select>
+
+            <label for="texto">Ingresa tu texto:</label>
+            <textarea id="texto" placeholder="Escribe aquí..."></textarea>
+
+            <button onclick="crea()" id="crea">Crea</button>
+        </div>
+
+        <div id="filtro">
+
+            <label for="usuario2">Selecciona Usuario:</label>
+            <select id="usuariodos">
+                <option>Edu</option>
+                <option>Izan</option>
+                <option>Lucas</option>
+                <option>Teo</option>
+                <option>Ivan</option>
+                <option>Ximo</option>
+                <option>Tots</option>
+                <option></option>
+            </select>
+
+            <label for="prioridad2">Ordena:</label>
+            <select name="prioridad2" id="prioridad2">
+                <option value="">Sin Orden</option>
+                <option value="prioridad">Por Prioridad</option>
+                <option value="fecha">Por Fecha</option>
+            </select>
+            
+
+            <button onclick="filtra()" id="filtra">Filtra</button>
+
+        </div>
+
+    </nav>
+    <div>
+        <section id="tareas"></section> <!-- Aquí se crearan las tareas -->
+    </div>
+    <script src="tasques.js"></script>
+    <script src="llistaTasques.js"></script>
+    <script src="app.js"></script>
+
+</body>
+</html>
