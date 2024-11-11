@@ -1,4 +1,5 @@
 const llista = new llistaTasques()
+//llista = getCookie("llistaGuardada")
 
 function crea() {
     const usuario = document.getElementById('usuario').value
@@ -14,6 +15,8 @@ function crea() {
     const tasca1 = new Tasca(usuario, texto, prioridad)
     llista.agregarTarea(tasca1)
     renderTareas()
+    //setCookie("llistaGuardada", llista, 200)
+
 }
 
 function renderTareas(tareas = llista.obtenerTareas()) {
@@ -71,33 +74,20 @@ function renderTareas(tareas = llista.obtenerTareas()) {
 }
 
 function filtra() {
-    const usuario = document.getElementById("usuariodos").value;
-    const ordenPrioridad = document.getElementById("prioridad2").value;
-    let tareas = llista.obtenerTareas();
+    const usuario = document.getElementById("usuariodos").value
+    const ordenPrioridad = document.getElementById("prioridad2").value
 
-    // Filtrado por usuario
-    if (usuario) {
-        tareas = tareas.filter(tarea => tarea.getusuario().includes(usuario));
-    }
+    const tareasFiltradas = llista.filtraTareas(usuario, ordenPrioridad)
+    renderTareas(tareasFiltradas)
 
-    // Ordenamiento por prioridad o fecha
-    if (ordenPrioridad === "prioridad") {
-        tareas.sort((a, b) => {
-            const prioridadOrden = { "Muy Alta": 1, "Alta": 2, "Media": 3, "Baja": 4 };
-            return prioridadOrden[a.getprioridad()] - prioridadOrden[b.getprioridad()];
-        });
-    } else if (ordenPrioridad === "fecha") {
-        tareas.sort((a, b) => b.getfecha() - a.getfecha());
-    }
-
-    // Renderizar las tareas filtradas y ordenadas
-    renderTareas(tareas);
 }
 
 
 function eliminar(index) {
     llista.eliminarTareas(index)
     renderTareas()
+    
+    //setCookie(llistaGuardada, llista, 200)
 }
 
 // prueba
@@ -111,3 +101,27 @@ const tasca3 = new Tasca("Edu", "prova3", "Media")
 llista.agregarTarea(tasca3)
 
 renderTareas()
+
+/*
+function setCookie(cname, cvalue, exdays) {
+    const d = new Date();
+    d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+    let expires = "expires="+d.toUTCString();
+    document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+}
+  
+function getCookie(cname) {
+    let name = cname + "=";
+    let ca = document.cookie.split(';');
+    for(let i = 0; i < ca.length; i++) {
+        let c = ca[i];
+        while (c.charAt(0) == ' ') {
+            c = c.substring(1);
+        }
+        if (c.indexOf(name) == 0) {
+            return c.substring(name.length, c.length);
+        }
+    }
+    return "";
+}
+    */
