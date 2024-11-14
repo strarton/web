@@ -4,6 +4,27 @@ body{
     top:0;
     background: linear-gradient(0deg, #000000, #444444, #afb3b6);
 }
+.lead{
+  padding-left: 10%;
+  padding-right: 10%;
+}
+.accordion-body {
+  display: flex;
+  align-items: flex-start; /* Alinea imagen y texto al inicio verticalmente */
+  gap: 1rem; /* Espacio entre imagen y texto */
+}
+
+.accordion-body img {
+  order: 2; /* Coloca la imagen a la derecha */
+  max-width: 150px; /* Controla el tamaño máximo de la imagen */
+  height: auto;
+}
+
+.accordion-body p {
+  order: 1; /* Coloca el texto a la izquierda */
+  flex: 1; /* Permite que el texto ocupe todo el espacio disponible */
+}
+
 
 .container.my-4{
   padding: 30px;
@@ -147,3 +168,10 @@ ul.list-group .list-group-item {
     width: 100%;
   }
     */
+
+
+    @media (min-width: 1000px) {
+      #desaparece{
+        display: none;
+      }
+    }
