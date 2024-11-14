@@ -1,0 +1,103 @@
+body{
+    margin: 0;
+    left: 0;
+    top:0;
+}
+
+h1 {
+    text-align:center;
+    margin:25px;
+}
+#carouselExampleCaptions {
+    height: 100vh; 
+  }
+
+  .carousel-item {
+    height: 100vh; 
+  }
+
+  .carousel-item img {
+    object-fit: cover; 
+    width: 100%;
+    height: 100vh; 
+  }
+
+
+  ul.list-group {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    padding: 0px;
+    margin: 0 auto;
+    max-width: 1000px;
+    width: 80%;
+}
+
+ul.list-group .list-group-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+
+
+  /* Estilo para centrar la "carpeta" en la página */
+  .folder-container {
+    display: flex;
+    justify-content: center;
+    align-items:flex-start;
+    margin: 0;
+    padding: 0;
+  }
+
+  .folder {
+    max-width: 1000px;
+    margin: 0;
+    width: 80%;
+    border: 3px solid #ccc;
+    border-radius: 10px;
+    display: flex;
+    margin-bottom: 0;
+    margin-left: 0px;;
+  }
+
+  .folder-nav {
+    
+    width: 25%;
+    background-color: #f8f9fa;
+    border-right: 2px solid #ccc;
+  }
+
+  .folder-content {
+    
+    width: 75%;
+    padding: 10px;
+  }
+
+  .folder-nav button {
+    text-align: left;
+  }
+
+  /* Asegura que los tab-content tengan un padding adecuado */
+  .tab-content {
+    padding: 10px;
+  }
+
+/*
+  .accordion, .accordion-flush{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    padding: 0px;
+    margin: 0 auto;
+    max-width: 1000px;
+    width: 100%;
+  }
+    */
