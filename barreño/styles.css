@@ -2,6 +2,52 @@ body{
     margin: 0;
     left: 0;
     top:0;
+    background: linear-gradient(0deg, #000000, #444444, #afb3b6);
+}
+
+.container.my-4{
+  padding: 30px;
+}
+
+#barreñologo {
+  background-color: rgba(0, 0, 0, 0);
+  z-index: 999999;
+  position: absolute;
+  width: 300px;
+  top: 50%; /* Centra verticalmente */
+  left: 50%; /* Centra horizontalmente */
+  transform: translate(-50%, -50%); /* Ajusta para que el centro de la imagen esté en el centro de la pantalla */
+}
+
+
+
+.nav-link{
+  
+  color:#ccc;
+}
+.nav-link.active{
+  background-color: none!important;
+}
+
+.carousel-caption p{
+  background-color: rgba(0, 0, 0, 0.5);
+  max-width: 500px;
+  margin: 0 auto;
+  color:white;
+}
+
+#precio{
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.accordion.accordion-flush{
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.list-group-item{
+  
+  color: white;
 }
 
 h1 {
