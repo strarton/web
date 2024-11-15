@@ -4,6 +4,13 @@ body{
     top:0;
     background: linear-gradient(0deg, #000000, #444444, #afb3b6);
 }
+
+
+
+.container-fluid{
+  padding: 0% 5%;
+}
+
 #mini-logo{
   width: 40px;
 }
@@ -17,19 +24,19 @@ body{
 }
 .accordion-body {
   display: flex;
-  align-items: flex-start; /* Alinea imagen y texto al inicio verticalmente */
-  gap: 1rem; /* Espacio entre imagen y texto */
+  align-items: flex-start;
+  gap: 1rem; 
 }
 
 .accordion-body img {
-  order: 2; /* Coloca la imagen a la derecha */
-  max-width: 150px; /* Controla el tamaño máximo de la imagen */
+  order: 2;
+  max-width: 150px; 
   height: auto;
 }
 
 .accordion-body p {
-  order: 1; /* Coloca el texto a la izquierda */
-  flex: 1; /* Permite que el texto ocupe todo el espacio disponible */
+  order: 1;
+  flex: 1;
 }
 
 
@@ -41,13 +48,21 @@ body{
   background-color: rgba(0, 0, 0, 0);
   z-index: 999999;
   position: absolute;
-  width: 300px;
-  top: 50%; /* Centra verticalmente */
-  left: 50%; /* Centra horizontalmente */
-  transform: translate(-50%, -50%); /* Ajusta para que el centro de la imagen esté en el centro de la pantalla */
+  width: 30vw;
+  top: 50%; 
+  left: 50%;
+  transform: translate(-50%, -50%); 
 }
 
+.card img {
+  min-height: 700px;
+  object-fit: cover;
+  width: 100%;
+}
 
+.card-body {
+  height: 175px;
+}
 
 .nav-link{
   
@@ -120,7 +135,7 @@ ul.list-group .list-group-item {
 
 
 
-  /* Estilo para centrar la "carpeta" en la página */
+
   .folder-container {
     display: flex;
     justify-content: center;
@@ -157,28 +172,20 @@ ul.list-group .list-group-item {
     text-align: left;
   }
 
-  /* Asegura que los tab-content tengan un padding adecuado */
+
   .tab-content {
     padding: 10px;
   }
-
-/*
-  .accordion, .accordion-flush{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    list-style-type: none;
-    padding: 0px;
-    margin: 0 auto;
-    max-width: 1000px;
-    width: 100%;
-  }
-    */
 
 
     @media (max-width: 768px) {
       #desaparece{
         display: none;
       }
+      #barreñologo {
+        width: 70vw;
+      }
     }
+
+
+
