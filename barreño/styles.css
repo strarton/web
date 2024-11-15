@@ -4,6 +4,13 @@ body{
     top:0;
     background: linear-gradient(0deg, #000000, #444444, #afb3b6);
 }
+#mini-logo{
+  width: 40px;
+}
+.navbar{
+  z-index: 9999999;
+}
+
 .lead{
   padding-left: 10%;
   padding-right: 10%;
@@ -170,7 +177,7 @@ ul.list-group .list-group-item {
     */
 
 
-    @media (min-width: 1000px) {
+    @media (max-width: 768px) {
       #desaparece{
         display: none;
       }
