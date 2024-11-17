@@ -33,7 +33,18 @@
       </div>
     </div>
   </nav>
-
+  <script>
+    // Close the navbar on link click
+    const navLinks = document.querySelectorAll('.nav-link');
+    const navCollapse = document.querySelector('.navbar-collapse');
+  
+    navLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        const bsCollapse = new bootstrap.Collapse(navCollapse, { toggle: false });
+        bsCollapse.hide();
+      });
+    });
+  </script>
   <img id="barreñologo" src="img/barreño.png" alt="logo">
 
     <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
@@ -274,7 +285,7 @@
             <div class="card-body">
               <h5 class="card-title">12 Octubre</h5>
               <p class="card-text">Disfruta de la mejor música mientras comes paella en <i>PLAY-PUIG</i>, <b>Valencia</b>.</p>
-              <a href="#https://maps.app.goo.gl/rBqQKrp7osf5QJTD8" class="btn btn-primary">Google Maps</a>
+              <a href="https://maps.app.goo.gl/rBqQKrp7osf5QJTD8" class="btn btn-primary">Google Maps</a>
             </div>
           </div>
         </div>
@@ -285,7 +296,7 @@
             <div class="card-body">
               <h5 class="card-title">6 Julio</h5>
               <p class="card-text">Qué mejor plan que disfrutar de Barreño cenando en el <i>Mater Dei</i>, <b>Castellón</b>.</p>
-              <a href="#https://maps.app.goo.gl/poG2VAtpCE5j8iBt8" class="btn btn-primary">Google Maps</a>
+              <a href="https://maps.app.goo.gl/poG2VAtpCE5j8iBt8" class="btn btn-primary">Google Maps</a>
             </div>
           </div>
         </div>

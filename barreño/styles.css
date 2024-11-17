@@ -195,6 +195,17 @@ ul.list-group .list-group-item {
         height: auto;
         object-fit: contain; /* Mantener el ajuste adecuado */
       }
+
+      .accordion-body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .accordion-body img {
+        max-width: 75px;
+    }
+    
     
     }
 
