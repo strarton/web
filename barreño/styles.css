@@ -185,7 +185,85 @@ ul.list-group .list-group-item {
       #barreñologo {
         width: 70vw;
       }
+
+      .galeria {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* En móviles, las imágenes serán un poco más pequeñas */
+      }
+    
+      .galeria img {
+        width: 100%; /* Las imágenes ocuparán todo el ancho del contenedor */
+        height: auto;
+        object-fit: contain; /* Mantener el ajuste adecuado */
+      }
+    
     }
 
+    .galeria {
+      
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Varias columnas en pantallas grandes */
+      gap: 10px; /* Espaciado entre las imágenes */
+    }
+    
+    .galeria img {
+      width: 100%; /* Las imágenes se ajustan al contenedor */
+      height: auto; /* Mantener proporciones */
+      object-fit: contain; /* Ajustar sin distorsionar */
+      border-radius: 5px; /* Bordes redondeados */
+    }
 
+        .lightbox {
+          display: none;
+          position: fixed;
+          top: 60px;
+          left: 0;
+          width: 100%;
+          height: 95%;
+          background: rgba(0, 0, 0, 0.9);
+          justify-content: center;
+          align-items: center;
+          z-index: 1050;
+          opacity: 0;
+          transition: opacity 0.3s ease;
+        }
+        .lightbox.show {
+          display: flex;
+          opacity: 1;
+        }
+        .lightbox img {
+          max-width: 90%;
+          max-height: 90%;
+          border: 5px solid white;
+          border-radius: 10px;
+          animation: fadeIn 0.3s ease;
+        }
+        @keyframes fadeIn {
+          from {
+            opacity: 0;
+            transform: scale(0.9);
+          }
+          to {
+            opacity: 1;
+            transform: scale(1);
+          }
+        }
+        .lightbox-buttons {
+          position: absolute;
+          top: 50%;
+          width: 100%;
+          display: flex;
+          justify-content: space-between;
+          transform: translateY(-50%);
+        }
+        .lightbox-buttons button {
+          background-color: rgba(255, 255, 255, 0.7);
+          border: none;
+          border-radius: 5px;
+          padding: 10px 20px;
+          cursor: pointer;
+          font-weight: bold;
+        }
+        .lightbox-buttons button:hover {
+          background-color: rgba(255, 255, 255, 1);
+        }
 
