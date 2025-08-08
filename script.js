@@ -219,11 +219,11 @@ document.addEventListener("DOMContentLoaded", function () {
           },
           4: {
             title: "Novologic",
-            text: "Trabajé durante 3 meses como software developer, aumentando en un 60% la eficiencia de trabajo de la empresa con varios scripts en Python. Aprendí muchísimo de SEO y WordPress."
+            text: "Trabajé durante 3 meses como software developer, aumentando en un 60% la eficiencia de trabajo de la empresa con varios scripts en Python. Aprendí muchísimo de SEO y WordPress. Trabajé en las páginas de <b>Que Ver por el Mundo y Azulrec</b>"
           },
           5: {
             title: "EBEP Express",
-            text: "Empresa donde ejercí de diseñador y desarrollador frontend en remoto. Trabajé junto a un equipo de 3 personas para todo el proyecto, desde el planteamiento hasta el despliegue de la aplicación web. Usamos Figma para el prototipo, React para el frontend, JWT y PHP para el backend."
+            text: "Empresa donde ejercí de diseñador y desarrollador frontend en remoto. Trabajé junto a un equipo de 3 personas para todo el proyecto, desde el planteamiento hasta el despliegue de la aplicación web <b>Eadbae</b>. Usamos Figma para el prototipo, React para el frontend, JWT y PHP para el backend. "
           },
           6: {
             title: "Freelance",
