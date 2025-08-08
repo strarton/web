@@ -1,4 +1,6 @@
+
 // Animación de texto
+
 const typedTextSpan = document.querySelector(".typed-text");
 const cursorSpan = document.querySelector(".cursor");
 const textArray = ["Eduardo Giurca", "Software Developer", "resolutivo y empático", "UX/UI Lover", "proactivo y adaptable"];
@@ -222,7 +224,12 @@ document.addEventListener("DOMContentLoaded", function () {
           5: {
             title: "EBEP Express",
             text: "Empresa donde ejercí de diseñador y desarrollador frontend en remoto. Trabajé junto a un equipo de 3 personas para todo el proyecto, desde el planteamiento hasta el despliegue de la aplicación web. Usamos Figma para el prototipo, React para el frontend, JWT y PHP para el backend."
+          },
+          6: {
+            title: "Freelance",
+            text: `Actualmente hago proyectos por cuenta propia a empresas o personas que lo necesitan. Puedes consultar mis proyectos <a href="terminal.html" target="_blank" rel="noopener noreferrer">aquí</a>.`
           }
+          
     
     };
   
@@ -277,7 +284,12 @@ document.addEventListener("DOMContentLoaded", function () {
     icon.style.boxShadow = `${shadowOffsetX}px ${shadowOffsetY}px 25px rgba(0,0,0,0.3)`;
   });
   
+  try {
+    document.getElementById('otw').addEventListener('click', function() {
+      window.location.href = '/info.html';
+    });
+  } catch (error) {
+    console.warn('Elemento con id "otw" no encontrado, no se pudo añadir el event listener.');
+  }
+  
 
-  document.getElementById('otw').addEventListener('click', function() {
-    window.location.href = '/info.html';
-  });

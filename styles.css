@@ -401,9 +401,9 @@ body {
       .oculto {
         display: none ;
       }
-      #terminal{
+      /*#terminal{
         display: none;
-      }
+      }*/
 
       .light-none{
         display:block;
@@ -486,6 +486,10 @@ body {
   }
   .buildings .building:nth-child(6) {
     animation-delay: 2s;
+  }
+
+  .buildings .building:nth-child(7) {
+    animation-delay: 2.25s;
   }
   
   /* Esto asegura que comiencen al cargar la página */
@@ -629,4 +633,7 @@ body {
 
 
 
+  #canvas-container {
+    background: none;
+  }
   

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Vanilla JS Tuner</title>
+
+  
+  <style>
+    body {
+        font-family: sans-serif;
+    }
+
+    .ttitle{
+      text-align: center;
+      font-size: 2.5rem;
+    }
+    .tuner-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 80vh;
+      text-align: center;
+      font-size: 5rem;
+      margin-top: -60px;
+    }
+    
+    .triangle {
+      width: 0;
+      height: 0;
+      border-left: 25px solid transparent;
+      border-right: 25px solid transparent;
+      border-top: 50px solid gray;
+      transition: border-top-color 0.3s ease;
+      margin-bottom: 10px;
+    }
+    
+    .triangle.in-tune {
+      border-top-color: limegreen;
+    }
+    
+    .center-row {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 40px;
+    }
+    
+    .dot {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background-color: #ccc;
+    }
+    
+    .active-red {
+      background-color: red;
+    }
+    
+    .active-yellow {
+      background-color: yellow;
+    }
+    
+    @media (max-width: 600px) {
+    .ttitle {
+      font-size: 1.8rem;
+    }
+
+    .tuner-container {
+      font-size: 3rem;
+      margin-top: -30px;
+    }
+
+    .triangle {
+      border-left: 18px solid transparent;
+      border-right: 18px solid transparent;
+      border-top: 36px solid gray;
+    }
+
+    .center-row {
+      gap: 20px;
+    }
+
+    .dot {
+      width: 28px;
+      height: 28px;
+    }
+  }
+  </style>
+</head>
+<body>
+  <h2 class="ttitle">Guitar Tuner</h2>
+  <div class="tuner-container">
+    <div class="triangle" id="tuneIndicator"></div>
+    <div class="center-row">
+      <div class="dot" id="dot1"></div>
+      <div class="dot" id="dot2"></div>
+      <div><strong id="noteDisplay">...</strong></div>
+      <div class="dot" id="dot4"></div>
+      <div class="dot" id="dot5"></div>
+    </div>
+  </div>
+
+  <script src="tuner.js"></script>
+</body>
+</html>
